@@ -16,7 +16,7 @@ class Pruebas extends Component
 
     public function render()
     {
-		$keyWord = '%'.$this->keyWord .'%';hp
+		$keyWord = '%'.$this->keyWord .'%';
         return view('livewire.pruebas.view', [
             'pruebas' => Prueba::latest()
 						->orWhere('id_prueba', 'LIKE', $keyWord)
